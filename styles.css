@@ -661,8 +661,47 @@ footer p{
 }
 
 
+.exs{
+    font-family: 'Montserrat';
+}
+.exs ul,li{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+.correctAns{
+    border-color: greenyellow;
+    border-width: 2px;
+}
 
 
+.container {
+    width: 50px;
+  }
+
+
+  .toggle-header {
+    width: 300px;
+    background-color: #3498db;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .toggle-content {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #ecf0f1;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+    border-radius: 0 0 8px 8px;
+  }
+
+  .toggle-content.open {
+    max-height: 100%; /* Высота содержимого */
+    padding: 15px;
+  }
 
 
 
