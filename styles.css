@@ -52,6 +52,7 @@ header {
 
 /* Логотип */
 .Logo img {
+    display: inline-block;
     width: 150px;
     height: auto;
 }
@@ -125,11 +126,14 @@ header {
 
 
 .nav-links a {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
     background-position: center;
     color: white;
     text-decoration: none;
-    margin-right: 15px;
-    padding: 3px;
+    margin-right: 910px;
     background-image:  linear-gradient(to right, #ffff, rgb(255, 0, 255)); /* Параметры градиента */
     background-repeat: no-repeat; /* Фон не повторяется */
     background-size: 0px 0px; /* Линия будет шириной 10px и высотой 2px */
@@ -137,6 +141,38 @@ header {
     padding-bottom: 2px; /* Расстояние от текста до линии */
     text-decoration: none; /* Убираем подчёркивание */
     transition: 0.5s; 
+}
+.top-menu {
+    display: flex;
+    justify-content: space-between; /* Разделение логотипа, ссылок и кнопки */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #5f2a5f; /* Цвет фона */
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column; /* Кнопки в столбик */
+    gap: 10px; /* Расстояние между кнопками */
+}
+
+.auth-button {
+    display: flex;
+    align-items: center;
+}
+
+.auth-button .cta-button {
+    font-family: 'Benzin';
+    background-color: #ff0066;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.auth-button .cta-button:hover {
+    background-color: #cc0052;
 }
 
 .Logo img{
@@ -150,6 +186,12 @@ header {
 
 /*МЕЙН ЧАСТЬ*/
 /* === Общий стиль для abs-c1 и abs-c3 === */
+.abs-container.abs-c3 {
+    gap: 10px; /* Уменьшаем отступ */
+}
+.abs-container.abs-c3 img{
+    max-width: 200%;
+}
 .abs-container {
     display: flex;
     align-items: center;
@@ -170,7 +212,7 @@ header {
 }
 
 .abs-content {
-    max-width: 55%;
+    max-width: 600px;
     text-align: left;
 }
 .abs-content a{
@@ -217,7 +259,45 @@ header {
 /* === Отзеркаливание для abs-c3 === */
 .abs-c3 {
     flex-direction: row-reverse; /* Разворачиваем порядок: текст слева, картинка справа */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для контейнера */
+    border-radius: 10px;
 }
+
+/* === Стиль для изображения в abs-c1 === */
+
+.abs-c3 img {
+    padding: 0;
+    margin: 0;
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* === Анимация для тени и наклона картинки === */
+.abs-c3 img:hover {
+    transform: scale(1.05) rotate(5deg); /* Увеличение и легкий наклон */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Увеличенная тень при наведении */
+}
+
+/* === Дополнительная анимация для контейнера === */
+.abs-c3 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* === Добавление анимации для тени контейнера === */
+.abs-c3:hover {
+    transform: translateY(-10px); /* Поднимем контейнер при наведении */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Увеличение тени для контейнера */
+}
+
 /* === Общий стиль для контейнера abs-c1 === */
 .abs-c1 {
     position: relative;
@@ -255,6 +335,14 @@ header {
     transform: translateY(-10px); /* Поднимем контейнер при наведении */
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Увеличение тени для контейнера */
 }
+.abs-c1 .cta-button{
+    margin-left: 250px;
+}
+
+
+
+
+
 
 
 
@@ -422,7 +510,10 @@ header {
 
 
 
-
+a{
+    text-decoration: none;
+    
+}
 
 
 .mcb1_11gr{ margin-top: 10px;
