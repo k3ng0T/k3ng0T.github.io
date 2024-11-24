@@ -126,6 +126,8 @@ header {
 
 
 .nav-links a {
+    font-size: 14px;
+    font-family: 'Montserrat',sans-serif;
     padding-top: 0;
     padding-bottom: 0;
     margin-top: 0;
@@ -133,7 +135,6 @@ header {
     background-position: center;
     color: white;
     text-decoration: none;
-    margin-right: 910px;
     background-image:  linear-gradient(to right, #ffff, rgb(255, 0, 255)); /* Параметры градиента */
     background-repeat: no-repeat; /* Фон не повторяется */
     background-size: 0px 0px; /* Линия будет шириной 10px и высотой 2px */
@@ -143,13 +144,13 @@ header {
     transition: 0.5s; 
 }
 .top-menu {
+    gap: 20px;
     display: flex;
-    justify-content: space-between; /* Разделение логотипа, ссылок и кнопки */
+    justify-content: start; /* Разделение логотипа, ссылок и кнопки */
     align-items: center;
     padding: 10px 20px;
     background-color: #5f2a5f; /* Цвет фона */
 }
-
 .nav-links {
     display: flex;
     flex-direction: column; /* Кнопки в столбик */
@@ -157,11 +158,14 @@ header {
 }
 
 .auth-button {
+    left: 90%;
+    position: absolute;
     display: flex;
     align-items: center;
 }
 
 .auth-button .cta-button {
+    font-size: 14px;
     font-family: 'Benzin';
     background-color: #ff0066;
     color: white;
@@ -176,8 +180,8 @@ header {
 }
 
 .Logo img{
-    width: 200px;
-    height: 50px;
+    width: 150px;
+    height: auto;
 }
 
 
